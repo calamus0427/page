@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>页面悬浮导航</title>
+<link rel="stylesheet" href="style.css" />
+<script src="script.js">
+window.onload=function(){
+	var nav=document.getElementById("suspendNav");
+	window.onscroll=function(){
+		nav.style.top=(document.documentElement.scrollTop || document.body.scrollTop)+"px";
+		}
+	}</script>
+</head>
+
+<body>
+<div id="suspendNav">
+	<h2>页面悬浮导航</h2>
+    <div><a href='http://www.calamus.cn' target="_blank">菖蒲1</a></div>
+    <div><a href='http://www.calamus.cn' target="_blank">菖蒲2</a></div>
+    <div><a href='http://www.calamus.cn' target="_blank">菖蒲3</a></div>
+    <div><a href='http://www.calamus.cn' target="_blank">菖蒲4</a></div>
+    <div><a href='http://www.calamus.cn' target="_blank">菖蒲5</a></div>
+</div>
+    <br/>
+ <div class="box"></div>
+<script src="script.js"></script>
+</body>
+</html>
